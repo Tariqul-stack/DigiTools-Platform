@@ -6,6 +6,7 @@ import Stats from "./Components/Stats/Stats";
 import MainSection from "./Components/MainSection/MainSection";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Steps from "./Components/Steps/Steps";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -20,6 +21,7 @@ function App() {
         setCartItems={setCartItems}
       ></MainSection>
       <ToastContainer position="top-right" autoClose={2000} />
+      <Steps></Steps>
     </>
   );
 }

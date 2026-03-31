@@ -24,7 +24,7 @@ const NavBar = ({ cartCount }) => {
           </span>
         </div>
 
-        <button className="text-lg font-semibold">Login</button>
+        <button className="hidden lg:flex text-lg font-semibold">Login</button>
 
         <button className="px-3 py-2 rounded-full text-lg font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
           Get Started
