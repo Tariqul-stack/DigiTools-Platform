@@ -49,6 +49,8 @@ const MainSection = ({ cartItems, setCartItems }) => {
     return "bg-gray-100 text-gray-600";
   };
 
+  const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+
   return (
     <section className="px-6 md:px-10 lg:px-16 py-20 bg-[#F8F8FB]">
       <div className="max-w-7xl mx-auto">
@@ -204,6 +206,16 @@ const MainSection = ({ cartItems, setCartItems }) => {
                     </button>
                   </div>
                 ))}
+
+                <div className="flex justify-between items-center bg-white border border-gray-200 rounded-2xl p-5">
+                  <h3 className="text-xl font-semibold text-[#111827]">
+                    Total Price
+                  </h3>
+
+                  <span className="text-2xl font-bold text-[#4F39F6]">
+                    ${totalPrice}
+                  </span>
+                </div>
 
                 <button
                   onClick={handleCheckout}
