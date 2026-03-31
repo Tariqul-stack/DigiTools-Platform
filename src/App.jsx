@@ -4,6 +4,8 @@ import Banner from "./Components/Banner/Banner";
 import NavBar from "./Components/Navbar/NavBar";
 import Stats from "./Components/Stats/Stats";
 import MainSection from "./Components/MainSection/MainSection";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -17,6 +19,7 @@ function App() {
         cartItems={cartItems}
         setCartItems={setCartItems}
       ></MainSection>
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 }

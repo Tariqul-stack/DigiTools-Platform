@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Check, Trash2 } from "lucide-react";
 import { productsData } from "../../Data/productsData";
+import { toast } from "react-toastify";
 
 const MainSection = ({ cartItems, setCartItems }) => {
   const [activeTab, setActiveTab] = useState("products");
@@ -9,22 +10,30 @@ const MainSection = ({ cartItems, setCartItems }) => {
   const handleAddToCart = (product) => {
     const exists = cartItems.find((item) => item.id === product.id);
 
-    if (exists) return;
+    if (exists) {
+      toast.warning("Already added to cart ⚠️");
+      return;
+    }
 
     setCartItems([...cartItems, product]);
     setAddedIds((prev) => [...prev, product.id]);
+
+    toast.success(`${product.name} added 🛒`);
   };
 
   const handleRemoveFromCart = (id) => {
+    const item = cartItems.find((item) => item.id === id);
     const remainingItems = cartItems.filter((item) => item.id !== id);
     setCartItems(remainingItems);
 
     setAddedIds((prev) => prev.filter((itemId) => itemId !== id));
+    toast.error(`${item.name} removed ❌`);
   };
 
   const handleCheckout = () => {
     setCartItems([]);
     setAddedIds([]);
+    toast.success("Checkout successful 🎉");
   };
 
   const getTagStyle = (tagType) => {
