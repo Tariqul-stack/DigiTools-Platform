@@ -9,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Steps from "./Components/Steps/Steps";
 import Pricing from "./Components/Pricing/Pricing";
 import CTA from "./Components/CTA/CTA";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -26,6 +27,7 @@ function App() {
       <Steps></Steps>
       <Pricing></Pricing>
       <CTA></CTA>
+      <Footer></Footer>
     </>
   );
 }
