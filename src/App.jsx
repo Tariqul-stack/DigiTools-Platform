@@ -8,6 +8,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Steps from "./Components/Steps/Steps";
 import Pricing from "./Components/Pricing/Pricing";
+import CTA from "./Components/CTA/CTA";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -24,6 +25,7 @@ function App() {
       <ToastContainer position="top-right" autoClose={2000} />
       <Steps></Steps>
       <Pricing></Pricing>
+      <CTA></CTA>
     </>
   );
 }
