@@ -48,7 +48,7 @@ This project simulates a real-world SaaS product landing page with dynamic featu
 
 ## 🌍 Live Preview
 
-👉 Netlify: 
+👉 Netlify: [my-digitools-platform.netlify.app](https://my-digitools-platform.netlify.app)
 
 ---
 

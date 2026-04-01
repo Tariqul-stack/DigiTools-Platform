@@ -41,7 +41,7 @@ const Pricing = () => {
               ))}
             </div>
 
-            <button className="mt-10 w-full py-4 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+            <button className="mt-10 w-full py-4 rounded-full text-white font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
               Get Started Free
             </button>
           </div>
@@ -108,7 +108,7 @@ const Pricing = () => {
               ))}
             </div>
 
-            <button className="mt-10 w-full py-4 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+            <button className="mt-10 w-full py-4 rounded-full text-white font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
               Contact Sales
             </button>
           </div>
