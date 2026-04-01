@@ -1,16 +1,62 @@
-# React + Vite
+# React + Vite 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌟 DigiTools Platform
 
-Currently, two official plugins are available:
+A modern and responsive SaaS-style web application where users can explore digital tools, view pricing plans, add products to cart, and experience a clean and interactive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📖 Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+DigiTools Platform is a beautifully designed frontend project built with React. It focuses on providing a smooth user experience with modern UI components like product cards, cart system, pricing section, and interactive CTA sections.
 
-## Expanding the ESLint configuration
+This project simulates a real-world SaaS product landing page with dynamic features such as cart functionality and toast notifications.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+* ⚛️ React.js
+* 🎨 Tailwind CSS
+* 🔔 React Toastify
+* 🎯 Lucide React Icons
+* 🌐 React Icons
+
+---
+
+## ✨ Key Features
+
+* 🛒 Add to Cart System with live product count update
+* 🔔 Toast Notifications (Add, Remove, Checkout)
+* 💰 Dynamic Total Price Calculation in Cart
+* 🎨 Fully Responsive Modern UI Design
+* ⚡ Interactive Sections (Pricing, CTA, Steps, Footer)
+
+---
+
+## 📸 UI Sections Included
+
+* Navbar with Cart Counter
+* Hero Banner Section
+* Product Listing & Cart Toggle
+* Pricing Plans Section
+* Steps / How It Works Section
+* CTA (Call To Action)
+* Footer with Social Links
+
+---
+
+## 🌍 Live Preview
+
+👉 Netlify: 
+
+---
+
+## 📌 Author
+
+👨‍💻 Tariqul Islam
+📧 [tariqul.dev0@gmail.com]
+
+---
+
+⭐ If you like this project, give it a star!

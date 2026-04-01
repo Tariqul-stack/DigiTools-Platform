@@ -7,6 +7,15 @@ const Banner = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         {/* Left Content */}
         <div className="max-w-xl space-y-6">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#E1E7FF] shadow-[0_0_20px_rgba(124,58,237,0.3)]">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#7C3AED] animate-pulse"></span>
+            <span className="text-sm font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+              New: AI-Powered Tools Available
+            </span>
+          </div>
+
+          {/* Heading */}
           <h1 className="text-5xl font-bold leading-tight">
             Supercharge Your
             <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
@@ -15,21 +24,11 @@ const Banner = () => {
             </span>
           </h1>
 
+          {/* Description */}
           <p className="text-gray-600 text-lg">
             Access premium AI tools, design assets, templates, and productivity
             software—all in one place. Start creating faster today.
           </p>
-
-          <div className="flex gap-4">
-            <button className="px-6 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
-              Explore Products
-            </button>
-
-            <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-[#9514FA] font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
-              <Play size={18} className="stroke-[#4F39F6]" />
-              Watch Demo
-            </button>
-          </div>
         </div>
 
         {/* Right Image */}
